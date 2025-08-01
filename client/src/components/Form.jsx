@@ -32,7 +32,7 @@ const Form = ({ onSuccess, EditData, clearEdit }) => {
     try {
 
       if (EditData) {
-        const EditRes = await fetch(`http://localhost:3000/api/admission/edit/${EditData._id}`, {
+        const EditRes = await fetch(`https://admitmate-mern-crud-1.onrender.com/api/admission/edit/${EditData._id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
