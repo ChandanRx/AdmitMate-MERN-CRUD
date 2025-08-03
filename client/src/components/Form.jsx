@@ -52,7 +52,7 @@ const Form = ({ onSuccess, EditData, clearEdit }) => {
 
       } else {
 
-        const submitRes = await fetch('https://admitmate-mern-crud-1.onrender.com//api/admission', {
+        const submitRes = await fetch('https://admitmate-mern-crud-1.onrender.com/api/admission', {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
