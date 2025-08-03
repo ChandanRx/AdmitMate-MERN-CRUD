@@ -7,7 +7,7 @@ const Table = ({ refresh , handleEdit}) => {
 
     const fetchStudents = async () => {
         try {
-            const students = await fetch('https://admitmate-mern-crud-1.onrender.com//api/admission/students')
+            const students = await fetch('https://admitmate-mern-crud-1.onrender.com/api/admission/students')
             const data = await students.json()
             const AllStudents = data.student
 
@@ -19,7 +19,7 @@ const Table = ({ refresh , handleEdit}) => {
     }
 
     const HandleDelete = async (id) => {
-        const deleteRes = await fetch(`https://admitmate-mern-crud-1.onrender.com//api/admission/delete/${id}`, {
+        const deleteRes = await fetch(`https://admitmate-mern-crud-1.onrender.com/api/admission/delete/${id}`, {
             method: "DELETE"
         })
 
